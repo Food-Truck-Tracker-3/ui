@@ -94,15 +94,46 @@ nav a{
 }
 
 #home-section-2{
-    background-color: #F6B638;
+    background-image: url("/resources/home-section-2-img.jpg");
+    background-size: cover;
+    height: 40vh;
     font-size: 1.2rem;
-    padding: 15%;
+    color: white;
+    text-align: center;
+    display: flex;
+}
+
+#home-section-2 p{
+    display: flex;
+    align-items: center;
+    padding: 0 5%; 
+    text-shadow: 2px 2px 4px #000000;
 }
 
 #home-section-3{
     background-color: #FA565E;
     font-size: 1.2rem;
-    padding: 15%
+    padding: 15%;
+    text-shadow: 1px 1px grey;
+    position: relative;
+}
+
+#home-section-3-bg-img{
+    content: "";
+    background-image: url("/resources/home-section-3-bg.png");
+    background-size: cover;
+    background-repeat: repeat;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+#home-section-3 p {
+   z-index: 1;
+   position: relative;
 }
 
 @media screen and (min-width: 800px){
