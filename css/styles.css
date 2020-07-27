@@ -59,6 +59,83 @@ nav a{
     font-size: 1.2rem;
 }
 
+#home-page-section-1{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 5%;
+}
+
+#home-page-section-1 h1{
+    font-family: "Rowdies";
+    font-size: 2.4rem;
+    order: 1;
+    width: 50%;
+}
+#home-page-section-1 p{
+    font-size: 1.2rem;
+    order: 3;
+    padding-bottom:10%;
+}
+
+/* #home-page-fp-intro{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 5%;
+} */
+
+#home-page-section-1 img{
+    width: 50%;
+    height: auto;
+    order: 2;
+}
+
+#home-section-2{
+    background-image: url("/resources/home-section-2-img.jpg");
+    background-size: cover;
+    height: 40vh;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    display: flex;
+}
+
+#home-section-2 p{
+    display: flex;
+    align-items: center;
+    padding: 0 5%; 
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#home-section-3{
+    background-color: #FA565E;
+    font-size: 1.2rem;
+    padding: 15%;
+    text-shadow: 1px 1px grey;
+    position: relative;
+}
+
+#home-section-3-bg-img{
+    content: "";
+    background-image: url("/resources/home-section-3-bg.png");
+    background-size: cover;
+    background-repeat: repeat;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+#home-section-3 p {
+   z-index: 1;
+   position: relative;
+}
+
 @media screen and (min-width: 800px){
     #home-page-logo{
         width: 100px;
