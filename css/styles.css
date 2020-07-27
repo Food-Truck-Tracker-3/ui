@@ -59,6 +59,52 @@ nav a{
     font-size: 1.2rem;
 }
 
+#home-page-section-1{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 5%;
+}
+
+#home-page-section-1 h1{
+    font-family: "Rowdies";
+    font-size: 2.4rem;
+    order: 1;
+    width: 50%;
+}
+#home-page-section-1 p{
+    font-size: 1.2rem;
+    order: 3;
+    padding-bottom:10%;
+}
+
+/* #home-page-fp-intro{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 5%;
+} */
+
+#home-page-section-1 img{
+    width: 50%;
+    height: auto;
+    order: 2;
+}
+
+#home-section-2{
+    background-color: #F6B638;
+    font-size: 1.2rem;
+    padding: 15%;
+}
+
+#home-section-3{
+    background-color: #FA565E;
+    font-size: 1.2rem;
+    padding: 15%
+}
+
 @media screen and (min-width: 800px){
     #home-page-logo{
         width: 100px;
