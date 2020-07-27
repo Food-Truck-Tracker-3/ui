@@ -59,6 +59,13 @@ nav a{
     font-size: 1.2rem;
 }
 
+@media screen and (min-width: 800px){
+    #home-page-logo{
+        width: 100px;
+        height: auto;
+    }
+
+}
 
 @media screen and (min-width:1000px){
 
@@ -82,7 +89,14 @@ nav a{
         height: auto;
     }
 
+    #home-page-logo{
+        width: 100px;
+        height: auto;
+    }
+
 }
+
+
 
 
 
