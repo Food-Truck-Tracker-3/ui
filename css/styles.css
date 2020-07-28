@@ -52,7 +52,7 @@ nav{
 
 nav a{
     color: black;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 }
 
 #home-page-section-1{
@@ -270,6 +270,34 @@ footer h2{
     text-align: center;
     font-size: 2.0rem;
     font-weight: 700;
+    padding-top: 5%;
+}
+
+#team-pics{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#team-pics div{
+    width:40%;
+}
+
+#team-pics img{
+    border-radius: 50%;
+    width: 90%;
+    margin: 5% auto;
+    text-align: center;
+}
+
+#team-pics div h3,p{
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#team-pics h3{
+    font-weight: 700;
+    margin-bottom: 3%;
 }
 
 @media screen and (min-width: 500px) {
