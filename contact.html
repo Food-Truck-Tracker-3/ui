@@ -1,26 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="resources/FP-logo-circle.png">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="resources/FP-logo-circle.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://kit.fontawesome.com/0521d4938d.js" crossorigin="anonymous"></script>
     <title>FoodPursuit - Contact</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div id="logo">
-            <span class="logo-text">FoodPursuit</span>
-            <img src="resources/FP-logo-circle.png" alt= "FoodPursuit logo - man icon with fork and knife in hand ready to eat in a yellow circle"/>
-            
-        </div>
-        <nav>
-            <a href= "index.html">Home</a>
-            <a href= "about.html">About</a>
-            <a href= "contact.html">Contact</a>
-            <a href="#">Login/Sign-Up</a>
-        </nav>
+      <div id="logo-text">FoodPursuit</div>
+      <img
+        id="logo"
+        src="resources/FP-logo-circle.png"
+        alt="FoodPursuit logo - man icon with fork and knife in hand ready to eat in a yellow circle"
+      />
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Login/Sign-Up</a>
+      </nav>
     </header>
-</body>
+
+    <section id="contact-section-1">
+      <h1>Contact Us</h1>
+      <p>
+        Questions about any of our services or features? Ask us here! One of our
+        support team members will be happy to help.
+      </p>
+    </section>
+    <section id="contact-section-2">
+      <form action="action_page.php">
+        <div class="contact-section-2-form">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="country">I am a</label>
+            </div>
+            <div class="col-75">
+              <select id="country" name="country">
+                <option value="diner">Diner</option>
+                <option value="Food Truck Owner">Food Truck Owner</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="col-75">
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height: 200px;"
+              ></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit" />
+          </div>
+        </div>
+      </form>
+      <span id="disclaimer"
+        >**Please allow up to 24 hours for an email response</span
+      >
+    </section>
+    <footer id="footer-contact">
+        <h2>Follow us!</h2>
+        <div class= "social-media-links">
+        <a href="facebook.com">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="instagram.com">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="twitter.com">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+
+    </footer>
+  </body>
 </html>
