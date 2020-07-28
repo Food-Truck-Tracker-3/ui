@@ -227,6 +227,51 @@ footer h2{
     display:none;
 }
 
+#about-section-1{
+    background-color: #FA565E ;
+    position: relative;
+    height: 40vh;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-section-1-bg-img{
+    content: "";
+    background-image: url("/resources/about-cover.png");
+    background-size: cover;
+    background-repeat: repeat;
+    opacity: 0.15;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+#about-section-1 h1{
+   z-index: 1;
+   position: relative;
+   color: black;
+   font-weight: 700;
+   font-size: 2.4rem;
+}
+
+#about-section-2{
+    font-size: 1.0rem;
+    padding: 10%;
+}
+
+#about-section-3{
+    background-color: #F6B638;
+}
+#about-section-3 h2{
+    text-align: center;
+    font-size: 2.0rem;
+    font-weight: 700;
+}
+
 @media screen and (min-width: 500px) {
     #home-page-section-1 h1{
         font-size: 2.5rem;
