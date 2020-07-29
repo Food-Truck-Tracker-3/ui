@@ -94,6 +94,7 @@ body {
   font-size: 62.5%;
   background-color: #fef6da;
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 nav a {
@@ -344,18 +345,71 @@ footer h2 {
   flex-wrap: wrap;
 }
 
-#team-pics div {
+#team-pics .team-content {
   width: 40%;
 }
 
-#team-pics img {
-  border-radius: 50%;
-  width: 90%;
-  margin: 5% auto;
-  text-align: center;
+#zach-img{
+    background-image: url(/resources/zach-smith-img.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 175px;
+    height: 175px;
+    border-radius: 100px;
+    margin: 5% auto;
 }
 
-#team-pics div h3,
+#virginia-img{
+    background-image: url(/resources/virginia-daven-img.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 175px;
+    height: 175px;
+    border-radius: 100px;
+    margin: 5% auto;
+}
+
+#tem-img{
+    background-image: url(/resources/tem-och-img.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 175px;
+    height: 175px;
+    border-radius: 100px;
+    margin: 5% auto;
+}
+
+#oleg-img{
+    background-image: url(/resources/oleg-miro-img.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 175px;
+    height: 175px;
+    border-radius: 100px;
+    margin: 5% auto;
+}
+
+#galo-img{
+    background-image: url(/resources/galo-sandoval-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 175px;
+    height: 175px;
+    border-radius: 100px;
+    margin: 5% auto;
+}
+
+#erica-img{
+    background-image: url(/resources/erica-girges-img.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 175px;
+    height: 175px;
+    border-radius: 100px;
+    margin: 5% auto;
+}
+
+#team-pics .team-content h3,
 p {
   text-align: center;
   font-size: 0.9rem;
@@ -421,7 +475,7 @@ form #subject {
   }
 
   #home-page-section-1 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   #about-section-2 {
@@ -435,6 +489,17 @@ form #subject {
 
   #about-section-3 h2 {
     font-size: 2.2rem;
+  }
+
+  #team-pics .team-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 45%;
+  }
+
+  #team-pics img{
+      width: 60%;
   }
 
   #contact-section-1 p {
@@ -452,6 +517,7 @@ form #subject {
     font-size: 4rem;
   }
 }
+
 
 @media screen and (min-width: 1000px) {
   #logo-text {
@@ -512,7 +578,7 @@ form #subject {
 
   #home-section-2 p{
       width: 40%;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       text-shadow: none;
       color: black;
   }
@@ -550,6 +616,90 @@ form #subject {
       font-size: 3.4rem;
       margin-bottom: 50px;
   }
+
+  #about-section-1 h1{
+      font-size: 3.6rem;
+  }
+  
+  #about-section-3{
+      padding-bottom: 40px;
+  }
+
+  #about-section-3 h2{
+      font-size: 3.2rem;
+      margin-bottom: 70px;
+  }
+
+  #zach-img:hover{
+      background-image: url(/resources/guy-fieri-chef.jpg);
+      background-size: cover;
+      background-position: left 25%;
+      transition: 0.4s ease-in-out;
+  }
+
+  #virginia-img:hover{
+      background-image: url(/resources/rachel-ray-chef.jpg);
+      background-size: cover;
+      transition: 0.4s ease-in-out;
+  }
+
+  #tem-img:hover{
+      background-image: url(/resources/gordon-tem-chef.jpg);
+      background-size: cover;
+      transition: 0.4s ease-in-out;
+  }
+
+  #oleg-img:hover{
+      background-image: url(/resources/wolfgang-chef.jpg);
+      background-size: cover;
+      transition: 0.4s ease-in-out;
+  }
+
+  #galo-img:hover{
+      background-image: url(/resources/bobbyflay-chef.jpeg);
+      background-size: cover;
+      background-position: center;
+      transition: 0.4s ease-in-out;
+  }
+
+  #erica-img:hover{
+      background-image: url(/resources/martha-chef.jpg);
+      background-size: cover;
+      background-position: right 20% top;
+      transition: 0.4s ease-in-out;
+
+  }
+
+  #team-pics{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    
+  }
+
+  #team-pics .team-content{
+      display: flex;
+      align-items: center;
+      width: 400px;
+  }
+
+
+  #team-pics img{
+      width:40%;
+      height: auto;
+
+  }
+
+  #team-pics .team-info{
+      flex-direction: column;
+  }
+
+  #wolfgang-puck-hover:hover {
+      background-image: url(/resources/wolfgang-chef.jpg);
+      z-index: 1;
+  }
+
 
 
 
