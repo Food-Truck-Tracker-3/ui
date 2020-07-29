@@ -89,6 +89,8 @@ video {
   vertical-align: baseline;
 }
 
+/* Mobile first styling start */
+
 body {
   font-family: "Overpass";
   font-size: 62.5%;
@@ -97,9 +99,7 @@ body {
   margin: 0 auto;
 }
 
-nav a {
-  text-decoration: none;
-}
+/* nav header for all pages */
 
 header {
   margin-top: 30px;
@@ -110,6 +110,7 @@ header {
 header img {
   width: 15%;
   height: auto;
+  max-width: 80px;
 }
 
 nav {
@@ -122,23 +123,28 @@ nav {
 nav a {
   color: black;
   font-size: 1rem;
+  text-decoration: none;
 }
 
 nav a:hover{
     text-decoration: underline;
 }
 
+/* home page styling */
+
 #home-page-section-1 {
   margin-top: 30px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   margin-left: 5%;
 }
 
 #home-page-section-1 h1 {
   font-family: "Rowdies";
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   order: 1;
   width: 50%;
 }
@@ -154,7 +160,6 @@ nav a:hover{
   order: 2;
  
 }
-
 
 #home-section-2 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -207,6 +212,8 @@ nav a:hover{
   font-weight: 700;
   margin: 30px auto;
 }
+
+/* All food truck vendor logos on home page */
 
 .home-foodtruck-imgs {
   display: flex;
@@ -292,6 +299,8 @@ footer h2 {
   color:white;
 }
 
+/* header logo design for about and contact pages */
+
 #logo {
   display: flex;
   align-items: center;
@@ -301,10 +310,12 @@ footer h2 {
   display: none;
 }
 
+/*  About page styling starts here */
+
 #about-section-1 {
   background-color: #fa565e;
   position: relative;
-  height: 40vh;
+  height: 30vh;
   margin-top: 40px;
   display: flex;
   align-items: center;
@@ -346,6 +357,8 @@ footer h2 {
   font-weight: 700;
   padding-top: 5%;
 }
+
+/* chef team pics styling - about page */
 
 #team-pics {
   display: flex;
@@ -417,11 +430,15 @@ footer h2 {
     margin: 5% auto;
 }
 
-#team-pics .team-content h3,
-p {
+#team-pics .team-content h3 {
   text-align: center;
   font-size: 0.9rem;
 }
+
+#team-pics .team-content p {
+    text-align: center;
+    font-size: 0.9rem;
+  }
 
 #team-pics h3 {
   font-weight: 700;
@@ -437,6 +454,8 @@ p {
   font-size: 1.8rem;
   color: black;
 }
+
+/* contact page styiling  */
 
 #contact-section-1 h1 {
   font-size: 1.8rem;
@@ -454,6 +473,8 @@ p {
   margin-top: 30px;
   text-align: center;
 }
+
+/* contact form styling */
 
 #contact-section-2 form {
   margin-top: 40px;
@@ -479,6 +500,10 @@ form #subject {
   position: relative;
   bottom: 0;
 }
+
+/* end mobile first */
+
+/* 500 px min width styling break */
 
 @media screen and (min-width: 500px) {
   #home-page-section-1 h1 {
@@ -516,6 +541,8 @@ form #subject {
   }
 }
 
+/* 600 px min width styling break */
+
 @media screen and (min-width: 600px) {
   #logo {
     width: 100px;
@@ -532,7 +559,7 @@ form #subject {
   }
 
   #about-section-2 p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   #about-section-3 h2 {
@@ -584,6 +611,8 @@ form #subject {
   }
 }
 
+/* 800 px min width styling break */
+
 @media screen and (min-width: 800px) {
   #logo {
     width: 100px;
@@ -624,6 +653,7 @@ form #subject {
   }
 }
 
+/*1000 px min width styling break */
 
 @media screen and (min-width: 1000px) {
   #logo-text {
@@ -663,6 +693,8 @@ form #subject {
       margin-top: 50px;
       text-align: left;
   }
+
+  /* home page desktop view animation slide in */
 
   #home-page-section-1 img{
       order: 3;
@@ -728,17 +760,20 @@ form #subject {
   }
 
   #about-section-1 h1{
-      font-size: 3.6rem;
+      font-size: 3.8rem;
   }
+
   
   #about-section-3{
       padding-bottom: 40px;
   }
 
   #about-section-3 h2{
-      font-size: 3.2rem;
+      font-size: 3.4rem;
       margin-bottom: 70px;
   }
+
+  /* add animation bounce hover to chef team pics */
 
   #zach-img:hover{
       background-image: url(/resources/guy-fieri-chef.jpg);
