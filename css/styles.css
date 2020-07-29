@@ -139,7 +139,6 @@ nav a:hover{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-left: 5%;
 }
 
 #home-page-section-1 h1 {
@@ -147,11 +146,15 @@ nav a:hover{
   font-size: 2.4rem;
   order: 1;
   width: 50%;
+  text-align: center;
 }
 #home-page-section-1 p {
   font-size: 1.2rem;
   order: 3;
   padding-bottom: 10%;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #home-page-section-1 img {
