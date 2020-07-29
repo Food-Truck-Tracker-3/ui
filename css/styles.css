@@ -469,7 +469,12 @@ footer h2 {
 }
 
 #contact-section-1 p {
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  font-size: 1.2rem;
+  margin: 0 25px;
+  text-align: center;
 }
 
 #contact-section-2 #disclaimer {
@@ -480,24 +485,59 @@ footer h2 {
 
 /* contact form styling */
 
+#contact-section-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #contact-section-2 form {
+  box-sizing: border-box;
   margin-top: 40px;
   display: flex;
   justify-content: center;
-  font-size: 0.8rem;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 1.0rem;
+
+  /* font-size: 1.2rem; */
 }
 
 form #subject {
-  width: 300px;
+  width: 200px;
+  border-radius: 10px;
+  margin: 10px auto;
+  font-size: 1.2rem;
+  border: 2px solid black;
+  padding-top: 10px;
+  text-align: center;
+  font-family: "Overpass";
 }
 
 #submit{
-    background-color: #F6B638;
+    background-color: #f6b638;
     border: none;
     font-family: "Overpass";
     font-size: 0.8rem;
-    padding: 4px 9px;
+    padding: 7px 9px;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px grey;
 }
+
+
+
+input, #lname, #fname, #inquiry{
+    padding: 3px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
 
 #footer-contact {
   margin-top: 90px;
@@ -543,6 +583,18 @@ form #subject {
     height: 175px;
     width:175px;
   }
+
+  input, #lname, #fname, #inquiry{
+    padding: 10px;
+    font-size:1.0rem;
+} 
+
+label [for="fname"] [for="lname"] [for="inquiry"] [for="subject"]{
+    font-size: 1.7rem;
+    margin-top: 5px;
+}
+
+
 }
 
 /* 600 px min width styling break */
@@ -613,6 +665,7 @@ form #subject {
 
   #submit{
       font-size: 1.0rem;
+      width: 150px;
   }
 
   #footer-contact{
@@ -877,6 +930,30 @@ form #subject {
       background-image: url(/resources/wolfgang-chef.jpg);
       z-index: 1;
   }
+
+  #contact-section-2 form{
+    background-color: #FA565E;
+    width: 600px;
+  }
+
+  input, #lname, #fname, #inquiry{
+      border: 0;
+  }
+
+  form #subject{
+      border: 0;
+  }
+
+  #submit{
+      background-color: white;
+  }
+
+  #submit:hover{
+      background-color: #f6b638;
+  }
+
+
+
 
 
 
