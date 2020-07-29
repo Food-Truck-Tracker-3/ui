@@ -221,41 +221,49 @@ nav a:hover{
 #ft-img-1 {
   width: 20%;
   height: auto;
+  align-self: center;
 }
 
 #ft-img-2 {
   width: 30%;
   height: auto;
+  align-self: center;
 }
 
 #ft-img-3 {
   width: 30%;
   height: auto;
+  align-self: center;
 }
 
 #ft-img-4 {
   width: 15%;
   height: auto;
+  align-self: center;
 }
 
 #ft-img-5 {
   width: 30%;
   height: auto;
+  align-self: center;
 }
 
 #ft-img-6 {
   width: 15%;
   height: auto;
+  align-self: center;
 }
 
 #ft-img-7 {
   width: 15%;
   height: auto;
+  align-self: center;
 }
 
 #ft-img-8 {
   width: 15%;
   height: auto;
+  align-self: center;
 }
 
 footer {
