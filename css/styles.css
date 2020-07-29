@@ -135,14 +135,16 @@ nav a:hover{
 #home-page-section-1 {
   margin-top: 30px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   margin-left: 5%;
 }
 
 #home-page-section-1 h1 {
   font-family: "Rowdies";
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   order: 1;
   width: 50%;
 }
@@ -428,11 +430,15 @@ footer h2 {
     margin: 5% auto;
 }
 
-#team-pics .team-content h3,
-p {
+#team-pics .team-content h3 {
   text-align: center;
   font-size: 0.9rem;
 }
+
+#team-pics .team-content p {
+    text-align: center;
+    font-size: 0.9rem;
+  }
 
 #team-pics h3 {
   font-weight: 700;
