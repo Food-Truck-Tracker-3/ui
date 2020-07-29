@@ -707,24 +707,28 @@ form #subject {
       background-size: cover;
       background-position: left 25%;
       transition: 0.4s ease-in-out;
+      animation: bounce 1s;
   }
 
   #virginia-img:hover{
       background-image: url(/resources/rachel-ray-chef.jpg);
       background-size: cover;
       transition: 0.4s ease-in-out;
+      animation: bounce 1s;
   }
 
   #tem-img:hover{
       background-image: url(/resources/gordon-tem-chef.jpg);
       background-size: cover;
       transition: 0.4s ease-in-out;
+      animation: bounce 1s;
   }
 
   #oleg-img:hover{
       background-image: url(/resources/wolfgang-chef.jpg);
       background-size: cover;
       transition: 0.4s ease-in-out;
+      animation: bounce 1s;
   }
 
   #galo-img:hover{
@@ -732,6 +736,7 @@ form #subject {
       background-size: cover;
       background-position: center;
       transition: 0.4s ease-in-out;
+      animation: bounce 1s;
   }
 
   #erica-img:hover{
@@ -739,7 +744,25 @@ form #subject {
       background-size: cover;
       background-position: right 20% top;
       transition: 0.4s ease-in-out;
+      animation: bounce 1s;
 
+  }
+
+  @keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
   }
 
   #team-pics{
