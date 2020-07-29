@@ -124,6 +124,10 @@ nav a {
   font-size: 1rem;
 }
 
+nav a:hover{
+    text-decoration: underline;
+}
+
 #home-page-section-1 {
   margin-top: 30px;
   display: flex;
@@ -144,19 +148,13 @@ nav a {
   padding-bottom: 10%;
 }
 
-/* #home-page-fp-intro{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-left: 5%;
-} */
-
 #home-page-section-1 img {
   width: 50%;
   height: auto;
   order: 2;
+ 
 }
+
 
 #home-section-2 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -261,14 +259,16 @@ nav a {
 }
 
 footer {
-  margin-top: 10px;
+  background-color: #fa565e;
 }
 
 footer h2 {
-  margin: 10px auto;
+  padding: 10px auto;
   font-size: 2rem;
+  color: black;
   text-align: center;
   font-weight: 700;
+  padding-top: 30px;
 }
 
 .social-media-links {
@@ -281,7 +281,7 @@ footer h2 {
   text-decoration: none;
   padding: 0 10px;
   font-size: 2rem;
-  color: #fa565e;
+  color:white;
 }
 
 #logo {
@@ -458,8 +458,18 @@ form #subject {
   width: 300px;
 }
 
+#submit{
+    background-color: #F6B638;
+    border: none;
+    font-family: "Overpass";
+    font-size: 0.8rem;
+    padding: 4px 9px;
+}
+
 #footer-contact {
-  margin-top: 40px;
+  margin-top: 90px;
+  position: relative;
+  bottom: 0;
 }
 
 @media screen and (min-width: 500px) {
@@ -502,8 +512,37 @@ form #subject {
       width: 60%;
   }
 
+  #contact-section-1 h1{
+    font-size: 2.5rem;
+}
+
   #contact-section-1 p {
+    font-size: 1.4rem;
     padding: 0 10px;
+  }
+
+  #contact-section-2 form {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.0rem;
+    font-weight: 700;
+  }
+   #fname, #lname, #inquiry{
+       padding: 5px 30px;
+   }
+
+  form #subject {
+    width: 500px;
+  }
+
+  #submit{
+      font-size: 1.0rem;
+  }
+
+  #footer-contact{
+      margin-top: 200px;
+      padding-bottom: 30px;
   }
 }
 
@@ -515,6 +554,35 @@ form #subject {
 
   #home-page-section-1 h1 {
     font-size: 4rem;
+  }
+
+  #home-section-2 p{
+      font-size: 1.4rem;
+  }
+
+  #home-section-3 p{
+      font-size: 1.4rem;
+  }
+
+    
+  #home-section-4{
+    margin-top: 60px;
+}
+
+#home-section-4 h2{
+    /* margin-bottom: 60px; */
+    font-size: 2.4rem;
+}
+
+.home-foodtruck-imgs{
+    padding: 0 10%;
+    padding-bottom: 10%;
+    padding-top: 5%;
+}
+  
+
+  #contact-section-1 h1{
+      font-size: 3.0rem;
   }
 }
 
@@ -560,6 +628,25 @@ form #subject {
 
   #home-page-section-1 img{
       order: 3;
+      animation-duration: 4s;
+      animation-name: slidein;
+      animation-iteration-count: 1;
+  }
+
+  @keyframes slidein {
+    0% { 
+      margin-left: 400px;
+    }
+
+    25% {
+        margin-right: 0%
+    }
+    50% {
+      margin-right: 40px;
+    }
+    100% {
+      margin-right: 0%;
+    }
   }
 
   #home-section-2-bg-img{
@@ -592,24 +679,9 @@ form #subject {
       background-size: contain;
       background-repeat: repeat;
   }
-  
-  #home-section-4{
-      margin-top: 60px;
-  }
-
-  #home-section-4 h2{
-      /* margin-bottom: 60px; */
-      font-size: 2.4rem;
-  }
-
-  .home-foodtruck-imgs{
-      padding: 0 10%;
-      padding-bottom: 10%;
-      padding-top: 5%;
-  }
 
   footer h2{
-      font-size: 2.4rem;
+      font-size: 3.0rem;
   }
     
   .social-media-links a{
