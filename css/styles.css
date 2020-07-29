@@ -207,6 +207,7 @@ nav a:hover{
   position: relative;
   color: black;
   font-weight: 700;
+  text-align: center;
 }
 
 #home-section-4 h2 {
@@ -747,11 +748,11 @@ form #subject {
       font-size: 1.4rem;
       text-shadow: none;
       color: black;
+      text-align: left;
   }
 
   #home-section-3 p{
       font-size: 1.6rem;
-
   }
 
   #home-section-3-bg-img{
