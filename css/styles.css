@@ -161,7 +161,7 @@ nav a:hover{
   height: auto;
   order: 2;
   min-width: 200px;
- 
+
 }
 
 #home-section-2 {
@@ -761,7 +761,7 @@ label [for="fname"] [for="lname"] [for="inquiry"] [for="subject"]{
 
   #home-page-section-1 img{
       order: 3;
-      animation-duration: 4s;
+      animation-duration: 3s;
       animation-name: slidein;
       animation-iteration-count: 1;
   }
